@@ -18,6 +18,7 @@ Our QA Engineer sent 14,000 requests to the server and reported that 8 users wer
 4. Change the instance to a t2.xlarge <br>
 ![image](https://github.com/auzhangLABS/Biltz_Test_2/assets/138344000/3801992b-7211-48c9-b265-0a146f1fcc84)
 <br>
+
 #### Method 2 (Complex however allows you to change instance configuration): 
 1. Stop the instance
 2. Click into instance information and go into storage.
@@ -27,4 +28,4 @@ Our QA Engineer sent 14,000 requests to the server and reported that 8 users wer
 6. Choose the instance type to be t2.xlarge and launch the instance.
 7. Detach the default volume on the t2.xlarge instance.
 8. Attach the volume from the detached t2.medium to the t2.xlarge volume.
-
+9. Use /dev/sda1 as the device name for the root volume.
