@@ -4,13 +4,16 @@
 This blitz test aimed to assess how our server would handle higher requests. We will observe and identify ways to allow our server to handle a significant increase in requests to our server.
 
 ## Problem:
-Our application has become very popular and is growing in demand. We need to ensure at least 14,000 users can access our application anytime. To test this, we will have the QA engineer send 14,000 requests to our server and record the results.
+Our application has become very popular and is growing in demand. We need to ensure at least 14,000 users can access our application at any time. To test this, we will have the QA engineer send 14,000 requests to our server and record the results.
 
 ## Original Test Results:
-Our QA engineer sent 14,000 requests to the server and reported that 8 users were unable to reach our application.
+Our QA engineer sent 14,000 requests to the server and reported that 8 users could not reach our application.
 
 ## Solution:
-#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.xlarge. Here are the differences in T2 instances. Keep in mind that there are many other instances where this will work. <br>
+#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.2xlarge. Here are the differences in T2 instances. Just to let you know, there are many other instances where this will work. <br>
+
+## Current Test Results:
+Our current test results will be TBD.
 
 ![image](https://github.com/auzhangLABS/Biltz_Test_2/assets/138344000/22b18950-6b48-4934-9042-1171c90b2bd8)
 
@@ -28,9 +31,9 @@ Our QA engineer sent 14,000 requests to the server and reported that 8 users wer
 3. Find the Volume ID and click on it
 4. Detech it from the T2.medium instance (remember the instance ID or name it)
 5. Start a new instance with the same OS, keypair, VPC, and subnet configuration as the instance before (this can be modified using this method)
-6. Choose the instance type to be t2.xlarge and launch the instance.
-7. Detach the default volume on the t2.xlarge instance.
-8. Attach the volume from the detached t2.medium to the t2.xlarge volume.
+6. Choose the instance type to be t2.2xlarge and launch the instance.
+7. Detach the default volume on the t2.2xlarge instance.
+8. Attach the volume from the detached t2.medium to the t2.2xlarge volume.
 9. Use /dev/sda1 as the device name for the root volume.
 
 ## Vertical Scaling System Design:
