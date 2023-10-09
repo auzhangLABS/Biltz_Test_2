@@ -38,7 +38,9 @@ To see the Vertical Scaling System Design click [here!](https://github.com/auzha
 
 
 ## Issues and Troubleshooting
-With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I soon figured out that Cloudwatch was not tracking it. I resolved this by running modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json`. This config.json file should already exist and I was able to find it in Cloudwatch
+With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I soon figured out that Cloudwatch was not tracking it. I resolved this by running modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: <br>
+`sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json`. <br>
+This config.json file should already exist and I was able to find it in Cloudwatch
 
 ## Optimization:
 I would implement a way to monitor your server and have the system auto-scale your instance horizontally or vertically, depending on business needs.
