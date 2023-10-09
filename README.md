@@ -38,7 +38,7 @@ To see the Vertical Scaling System Design, click [here!](https://github.com/auzh
 
 
 ## Issues and Troubleshooting
-With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I soon figured out that Cloudwatch was not tracking it. I resolved this by modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: <br>
+With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I figured out that Cloudwatch was not tracking it. I resolved this by modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: <br>
 `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json`. <br>
 This config.json file should already exist and I was able to find it in Cloudwatch
 
