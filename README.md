@@ -10,7 +10,7 @@ Our application has become very popular and is growing in demand. We need to ens
 Our QA engineer sent 14,000 requests to the server and reported that 8 users could not reach our application.
 
 ## Solution:
-#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.xlarge. Here are the differences in T2 instances. Just to let you know, there are many other instances where this will work, including T3, T4, M4, etc. Here are some comparisons of the T2 instances: <br>
+#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.xlarge, which is an increase from 2 vCPUs to 4 vCPUs, an increase from 4 Mem to 16 Mem, and an enhanced network performance. Just to let you know, there are many other instances where this will work, including T3, T4, M4, etc. Here are some comparisons of the T2 instances: <br>
 ![image](https://github.com/auzhangLABS/Biltz_Test_2/assets/138344000/22b18950-6b48-4934-9042-1171c90b2bd8)
 
 #### Method 1 (Simple):
