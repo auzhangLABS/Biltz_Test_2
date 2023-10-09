@@ -10,11 +10,7 @@ Our application has become very popular and is growing in demand. We need to ens
 Our QA engineer sent 14,000 requests to the server and reported that 8 users could not reach our application.
 
 ## Solution:
-#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.xlarge. Here are the differences in T2 instances. Just to let you know, there are many other instances where this will work. <br>
-
-## Current Test Results:
-Our current test results will be TBD.
-
+#### Vertical scale the instance can increase the power of the existing instance to meet the rise in demand. We are scaled from a t2.medium to a t2.xlarge. Here are the differences in T2 instances. Just to let you know, there are many other instances where this will work, including T3, T4, M4, etc. Here are some comparisons of the T2 instances: <br>
 ![image](https://github.com/auzhangLABS/Biltz_Test_2/assets/138344000/22b18950-6b48-4934-9042-1171c90b2bd8)
 
 #### Method 1 (Simple):
@@ -39,6 +35,8 @@ Our current test results will be TBD.
 ## Vertical Scaling System Design:
 To see the Vertical Scaling System Design, click [here!](https://github.com/auzhangLABS/Biltz_Test_2/blob/main/Biltz2_VerticalScaling.drawio.png)
 
+## Current Test Results:
+Our current test results will be TBD.
 
 ## Issues and Troubleshooting
 With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I figured out that Cloudwatch was not tracking it. I resolved this by modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: <br>
