@@ -34,7 +34,7 @@ Our QA Engineer sent 14,000 requests to the server and reported that 8 users wer
 9. Use /dev/sda1 as the device name for the root volume.
 
 ## Vertical Scaling System Design:
-To see the Vertical Scaling System Design click [here!] (https://github.com/auzhangLABS/Biltz_Test_2/blob/main/Biltz2_VerticalScaling.drawio.png)
+To see the Vertical Scaling System Design click [here!](https://github.com/auzhangLABS/Biltz_Test_2/blob/main/Biltz2_VerticalScaling.drawio.png)
 
 
 ## Issues and Troubleshooting
