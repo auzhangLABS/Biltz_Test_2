@@ -32,6 +32,8 @@ Our QA engineer sent 14,000 requests to the server and reported that 8 users cou
 8. Attach the volume from the detached t2.medium to the t2.xlarge volume.
 9. Use /dev/sda1 as the device name for the root volume.
 
+#### After changing the instance, I had to make sure Jenkin was run though to ensure that the application was working
+
 ## Vertical Scaling System Design:
 To see the Vertical Scaling System Design, click [here!](https://github.com/auzhangLABS/Biltz_Test_2/blob/main/Biltz2_VerticalScaling.drawio.png)
 
