@@ -38,7 +38,7 @@ Our QA engineer sent 14,000 requests to the server and reported that 8 users cou
 To see the Vertical Scaling System Design, click [here!](https://github.com/auzhangLABS/Biltz_Test_2/blob/main/Biltz2_VerticalScaling.drawio.png)
 
 ## Current Test Results:
-Our current test results will be TBD.
+Our QA engineer sent 14,000 requests to the server and reported that all the users could reach our application without any errors.
 
 ## Issues and Troubleshooting
 With method 2, an issue I faced was with the Cloudwatch agent. When attaching the volume block to the instance and then running it, I figured out that Cloudwatch was not tracking it. I resolved this by modifying the IAM role (CloudWatchAgentServerRole) for this instance and running this command: <br>
